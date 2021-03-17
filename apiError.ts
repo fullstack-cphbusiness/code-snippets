@@ -3,7 +3,7 @@
   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error
 */
 
-// Add this file to a folder errors
+// ADD THIS FILE TO A FOLDER errors 
 
 class ApiError extends Error {
     constructor(msg:string,public errorCode ?:number) {
