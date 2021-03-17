@@ -1,1 +1,1 @@
-# code-snippets
+# code-snippets in fullstack JavaScipt/Typescript
