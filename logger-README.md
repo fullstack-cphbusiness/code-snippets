@@ -24,6 +24,10 @@ const morganFormat = process.env.NODE_ENV == "production" ? "combined" : "dev"
 app.use(require("morgan")(morganFormat, { stream }));
 logger.log("info", "Server started");
 ```
+
+## Get the logger.ts file
+Create a file logger.ts in the middleware folder and copy/paste the content of logger.ts into this file
+
 # Using the logger-middleware
 - Run your project and observe how all (depending on where you added the middleware) requests are logged to the terminal
 - Observe that NOTHING is writen to the logfiles
