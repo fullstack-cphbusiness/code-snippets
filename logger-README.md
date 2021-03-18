@@ -8,7 +8,7 @@ npm install @types/morgan --save-dev
 ```
 ### In the root of your project create a logs folder as described below
 Create a folder (in the root of the project) called logs
-Add an file to the folder called **```.keep```**  with the content *necessay since git does not commit/push empty folders*
+Add an file to the folder called **```.keep```**  with the content *necessary since git does not commit/push empty folders*
 
 Add this to your .gitignore
 ```
