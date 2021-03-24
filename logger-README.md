@@ -22,7 +22,11 @@ logs/*
 import logger, { stream } from "./middleware/logger";
 const morganFormat = process.env.NODE_ENV == "production" ? "combined" : "dev"
 app.use(require("morgan")(morganFormat, { stream }));
-logger.log("info", "Server started");
+app.set("logger", logger) //This line sets the logger with a global key on the application object
+//You can now use it from all your middlewares like this req.app.get("logger").log("info","Message")
+//Level can be one of the following: error, warn, info, http, verbose, debug, silly
+//Level = "error" will go to the error file in production
+logger.log("info", "Server started"); //Example of how to use the logger
 ```
 
 ## Get the logger.ts file
